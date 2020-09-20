@@ -82,4 +82,4 @@ production:
   <<: *default
   database: settlements_production
   username: settlements
-  password: <%= ENV['SETTLEMENTS_DATABASE_PASSWORD'] %>
+  password:
