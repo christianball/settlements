@@ -4,7 +4,7 @@ module Buildings
   class BuildingsController < ApplicationController
 
     def index
-      @buildings = Building.all
+      @buildings = Building.where(settlement_id: params[:settlement_id])
 
       render(json: @buildings)
     end
